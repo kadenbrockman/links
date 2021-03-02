@@ -8,14 +8,17 @@
   --font: 'Karla', sans-serif;
   --delay: .3s;
 }
-
+html {
+  background: linear-gradient(217deg, rgb(122 183 212), rgba(66, 92, 128) 70.71%);
+}
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   font-family: var(--font);
-  background: linear-gradient(217deg, rgb(122 183 212), rgba(66, 92, 128) 70.71%);
+
+  background-attachment: fixed;
   opacity: 0;
   animation: 1s ease-out var(--delay) 1 transitionAnimation;
   /* duration/timing-function/delay/iterations/name */
