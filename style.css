@@ -25,10 +25,6 @@ body {
   animation-fill-mode: forwards;
 }
 
-.fa-check-circle {
-  color: #ffffff;
-}
-
 #profilePicture img {
   position: relative;
   width: 96px;
@@ -120,17 +116,15 @@ body {
   color: var(--bgColor);
 }
 
-#userName:hover {
-  animation: 1.5s ease-out 3 wiggle;
-}
-
 .linkb:hover {
   background-color: white;
   color: var(--bgColor);
   animation: none;
 }
 
- /*.logobottom {
+
+
+/*.logobottom {
    position: relative;
   display: flex;
   align-items: center;
@@ -150,6 +144,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 @keyframes wiggle {
   0% {
@@ -174,25 +169,19 @@ body {
 }
 
 /* ---------- Other Links ----------- */
-
 .redirecttext {
   position: relative;
   color: var(--accentColor);
   font-size: 24px;
   text-align: center;
   display: block;
-
   /* 17px */
   text-decoration: none;
   /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
   -webkit-tap-highlight-color: transparent;
 }
 
-
-
-
 .gclink {
-
   position: relative;
   background: transparent;
   color: var(--accentColor);
