@@ -119,7 +119,7 @@ body {
 .linkb:hover {
   background-color: white;
   color: var(--bgColor);
-  animation: n:
+  animation: none:
 }
 
 
