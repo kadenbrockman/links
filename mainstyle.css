@@ -1,6 +1,4 @@
-
-
-/* ---------------------- Fonts and Icons ---------------------- */
+/* -------------------------------------------- Fonts and Icons -------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 
@@ -59,27 +57,27 @@ margin: 0;
   font-size: 20px;
   color: rgb(255, 255, 255); 
   padding: 0; 
-  margin: 0;
-  
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
   }
-
-/* ---------------------- Main Colors And Settings ---------------------- */
+  
+/* -------------------------------------------- Main Colors And Settings -------------------------------------------- */
 
 :root {
   --bgColor: #000000;
   --bgColor2: #090a0f;
-  --accentColor: #E6E6E6;
+  --accentColor: #ffffff;
   --locationColor: #c7c7c7;
   --font: 'Karla', sans-serif;
-  --delay: .3s;
-  
-    
+  --delay: .3s; 
 }
 
 html {
-  background-color: #000000;
   background-attachment: fixed;
-  background-color: #276299;
+  background-color: #5e738e;
   overflow-y: hidden; overscroll-behavior-y: none;
   overflow-x: hidden; overscroll-behavior-x: none;
 }
@@ -94,21 +92,16 @@ body {
   background-position: center;
   background-attachment: fixed;
   height: 100%;
-  
 }
 
 #noscroll {
-  
   overflow-y: hidden; overscroll-behavior-y: none;
-
 }
-  #noscrolly { 
+#noscrolly { 
     overflow-x: hidden; overscroll-behavior-x: none;
-  
 }
 
-
-/* ---------------------- Profile ---------------------- */
+/* -------------------------------------------- Profile -------------------------------------------- */
 
 #profilePicture img {
   position: relative;
@@ -118,11 +111,9 @@ body {
   margin: 35px auto 20px;
   border-radius: 50%;
   box-shadow: 0 5px 25px 4px rgba(0, 0, 0, 0.55);
-  ;
   -webkit-tap-highlight-color: transparent;
   animation: float 10s infinite ease-in-out;
   z-index: 10;
-  
 }
 
 #userName {
@@ -154,7 +145,7 @@ body {
   max-width: 400px;
   width: auto;
   display: block;
-  margin: 27px auto;
+  margin: 10px auto;
   animation: float 10s infinite ease-in-out;
   z-index: 10;
 }
@@ -220,25 +211,32 @@ body {
   animation: none;
 }
 
+/*----------------------------------------------- Icon Links ---------------------------------------------*/
+
 #icongroup {
   position: relative;
   animation: float 10s infinite ease-in-out;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
   z-index: 10;
+  text-decoration: none;
 }
 
-.mail {
+.icon1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
   position: relative;
   text-align: center;
   z-index: 10;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
 }
 
-
-/*-------------------------animations-----------------------*/
-
-
+/*----------------------------------------------- animations ---------------------------------------------*/
 
 @keyframes transitionAnimation {
   0% {
@@ -251,7 +249,6 @@ body {
     transform: translateY(0);
   }
 }
-
 
 @keyframes wiggle {
   0% {
@@ -287,14 +284,7 @@ body {
 	}
 }
 
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
-}
-
-
-/* ---------- 404 Page ----------- */
+/* ------------------------------------------------------ 404 Page ------------------------------------------------------- */
 
 .errortitle {
   margin: 0;
