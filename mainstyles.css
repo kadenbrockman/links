@@ -1,0 +1,331 @@
+/* -------------------------------------------- Fonts and Icons -------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+html, body { margin: 0; }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.check { 
+font-size: 16px;
+color: rgb(104, 175, 241); 
+padding: 0; 
+margin: 0;
+}
+
+.material-icons.mail { 
+  font-size: 20px;
+  color: rgb(255, 255, 255); 
+  padding: 0; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  }
+  
+/* -------------------------------------------- Main Colors And Settings -------------------------------------------- */
+
+:root {
+  --bgColor: #000000;
+  --bgColor2: #090a0f;
+  --accentColor: #ffffff;
+  --locationColor: #c7c7c7;
+  --font: 'Karla', sans-serif;
+  --delay: .3s; 
+}
+
+html {
+  background-attachment: fixed;
+  background-color: #5e738e;
+  overflow-y: hidden; overscroll-behavior-y: none;
+  overflow-x: hidden; overscroll-behavior-x: none;
+}
+
+body {
+  min-height: 10px;
+  font-family: var(--font);
+  opacity: 0;
+  animation: 1s ease-out var(--delay) 1 transitionAnimation;
+  animation-fill-mode: forwards;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+#noscroll {
+  overflow-y: hidden; overscroll-behavior-y: none;
+}
+#noscrolly { 
+    overflow-x: hidden; overscroll-behavior-x: none;
+}
+
+/* -------------------------------------------- Profile -------------------------------------------- */
+
+#profilePicture img {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  display: block;
+  margin: 35px auto 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 25px 4px rgba(0, 0, 0, 0.55);
+  -webkit-tap-highlight-color: transparent;
+  animation: float 10s infinite ease-in-out;
+  z-index: 10;
+}
+
+#userName {
+  color: var(--accentColor);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.25;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+  animation: float 10s infinite ease-in-out;
+  z-index: 10;
+}
+
+#Location {
+  color: var(--locationColor);
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+  animation: float 10s infinite ease-in-out;
+  z-index: 10;
+}
+
+#links {
+  max-width: 400px;
+  width: auto;
+  display: block;
+  margin: 10px auto;
+  animation: float 10s infinite ease-in-out;
+  z-index: 10;
+}
+
+.link {
+  position: relative;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+  animation: shine 5s linear infinite;
+  z-index: 10;
+}
+
+.linkb {
+  position: relative;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+  animation: shine 5s linear infinite, wiggle 2s infinite;
+  z-index: 10;
+}
+
+@media (hover: hover) {
+  .link:hover {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+  }
+}
+
+.link:active {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+  z-index: 10;
+}
+
+.linkb:hover {
+  background-color: white;
+  color: var(--bgColor);
+  animation: none;
+}
+
+/*----------------------------------------------- Icon Links ---------------------------------------------*/
+
+#icongroup {
+  position: relative;
+  animation: float 10s infinite ease-in-out;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  z-index: 10;
+  text-decoration: none;
+}
+
+.icon1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/*----------------------------------------------- animations ---------------------------------------------*/
+
+@keyframes transitionAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  85% {
+    transform: rotate(5deg);
+  }
+
+  95% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* ------------------------------------------------------ 404 Page ------------------------------------------------------- */
+
+.errortitle {
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  font-family: var(--font);
+  color: white;
+  animation: 1s ease-out var(--delay) 1 transitionAnimation;
+  /* duration/timing-function/delay/iterations/name */
+  animation-fill-mode: forwards;
+
+}
+
+.errorsubtitle {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font);
+  color: white;
+  animation: 1s ease-out var(--delay) 1 transitionAnimation;
+  /* duration/timing-function/delay/iterations/name */
+  animation-fill-mode: forwards;
+}
+
+.errorbutton {
+  text-align: center;
+  position: relative;
+  background: transparent;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 25px;
+  font-size: 14px;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* 17px */
+  text-decoration: none;
+  animation: none;
+  max-width: 200px;
+  width: auto;
+  display: block;
+  margin: 27px auto;
+}
