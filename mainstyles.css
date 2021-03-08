@@ -309,6 +309,11 @@ body {
 }
 
 .errorbutton {
+	background-color: var(--accentColor);
+	color: var(--bgColor);
+}
+
+.errorbutton {
   text-align: center;
   position: relative;
   background: transparent;
