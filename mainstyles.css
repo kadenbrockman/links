@@ -308,7 +308,7 @@ body {
   animation-fill-mode: forwards;
 }
 
-.errorbutton: hover {
+.errorbutton:hover {
 	background-color: var(--accentColor);
 	color: var(--bgColor);
 }
