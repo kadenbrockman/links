@@ -53,6 +53,11 @@ padding: 0;
 margin: 0;
 }
 
+
+
+.icon-verified {
+color: rgb(104, 175, 241);
+font-size: 18px; }
 .material-icons.mail { 
   font-size: 20px;
   color: rgb(255, 255, 255); 
@@ -64,22 +69,25 @@ margin: 0;
   text-decoration: none;
   }
   
+/* -------------------------------------------- Pop Up -------------------------------------------- */
+
+
+
+
 /* -------------------------------------------- Main Colors And Settings -------------------------------------------- */
 
 :root {
   --bgColor: #000000;
   --bgColor2: #090a0f;
-  --accentColor: #ffffff;
-  --locationColor: #c7c7c7;
+  --accentColor: #333333;
+  --locationColor: #797979;
   --font: 'Karla', sans-serif;
   --delay: .3s; 
 }
 
 html {
   background-attachment: fixed;
-  background-color: #5e738e;
-  overflow-y: hidden; overscroll-behavior-y: none;
-  overflow-x: hidden; overscroll-behavior-x: none;
+  background-color: #ebf1f3;
 }
 
 body {
@@ -92,6 +100,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   height: 100%;
+  background-color: #ebf1f3;
 }
 
 #noscroll {
@@ -110,7 +119,7 @@ body {
   display: block;
   margin: 35px auto 20px;
   border-radius: 50%;
-  box-shadow: 0 5px 25px 4px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 5px 25px 4px rgba(98, 139, 226, 0.55); 
   -webkit-tap-highlight-color: transparent;
   animation: float 10s infinite ease-in-out;
   z-index: 10;
@@ -127,6 +136,7 @@ body {
   text-align: center;
   animation: float 10s infinite ease-in-out;
   z-index: 10;
+  margin-bottom: 5px;
 }
 
 #Location {
@@ -152,13 +162,14 @@ body {
 
 .link {
   position: relative;
-  background-color: transparent;
-  color: var(--accentColor);
-  border: solid var(--accentColor) 2px;
+  background-color: #4C6FFF;
+  color: #ffffff;
+  border: solid #4C6FFF 2px;
   border-radius: 25px;
   font-size: 1rem;
   text-align: center;
   display: block;
+  box-shadow: 0 5px 25px 4px rgba(98, 139, 226, 0.55); 
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -173,16 +184,17 @@ body {
 
 .linkb {
   position: relative;
-  background-color: transparent;
-  color: var(--accentColor);
-  border: solid var(--accentColor) 2px;
+  background-color: #4C6FFF;
+  color: #ffffff;
+  border: solid #4C6FFF 2px;
   border-radius: 25px;
   font-size: 1rem;
   text-align: center;
   display: block;
+  box-shadow: 0 5px 25px 4px rgba(98, 139, 226, 0.45); 
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   padding: 10px;
   /* 17px */
   text-decoration: none;
@@ -194,22 +206,30 @@ body {
 
 @media (hover: hover) {
   .link:hover {
-    background-color: var(--accentColor);
-    color: var(--bgColor);
+    background-color: #4C6FFF;
+    color: white;
+    border-color: white;
+    animation: grow 2s ease-in-out infinite;
   }
 }
 
 .link:active {
-  background-color: var(--accentColor);
-  color: var(--bgColor);
+  background-color: #4C6FFF;
+  color: white;
+  border-color: white;
   z-index: 10;
+  
 }
 
 .linkb:hover {
-  background-color: white;
-  color: var(--bgColor);
+  background-color: #4C6FFF;
+  border-color: white;
+  color: white;
   animation: none;
 }
+
+
+
 
 /*----------------------------------------------- Icon Links ---------------------------------------------*/
 
@@ -232,8 +252,12 @@ body {
   text-align: center;
   z-index: 10;
   text-decoration: none;
-  color: #ffffff;
+  color: #4C6FFF;
   font-size: 20px;
+}
+
+.icon1:hover {
+  color: white;
 }
 
 /*----------------------------------------------- animations ---------------------------------------------*/
@@ -247,6 +271,19 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+@keyframes grow {
+  0% {
+    background-color: #4C6FFF;
+  }
+  50% {
+    background-color: #8ca3ff;
+  }
+  100% {
+    background-color: #4C6FFF;
   }
 }
 
@@ -306,11 +343,6 @@ body {
   animation: 1s ease-out var(--delay) 1 transitionAnimation;
   /* duration/timing-function/delay/iterations/name */
   animation-fill-mode: forwards;
-}
-
-.errorbutton:hover {
-	background-color: var(--accentColor);
-	color: var(--bgColor);
 }
 
 .errorbutton {
