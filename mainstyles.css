@@ -218,14 +218,14 @@ body {
   color: white;
   border-color: white;
   z-index: 10;
-  
+  animation: grow 2s ease-in-out infinite;
 }
 
 .linkb:hover {
   background-color: #4C6FFF;
   border-color: white;
   color: white;
-  animation: none;
+  animation: grow 2s ease-in-out infinite;
 }
 
 
