@@ -54,7 +54,6 @@ margin: 0;
 }
 
 
-
 .icon-verified {
 color: rgb(104, 175, 241);
 font-size: 18px; }
@@ -88,6 +87,7 @@ font-size: 18px; }
 html {
   background-attachment: fixed;
   background-color: #ebf1f3;
+  
 }
 
 body {
@@ -226,6 +226,7 @@ body {
   border-color: white;
   color: white;
   animation: grow 2s ease-in-out infinite;
+  
 }
 
 
@@ -257,7 +258,7 @@ body {
 }
 
 .icon1:hover {
-  color: white;
+  animation: grow2 2s ease-in-out infinite;
 }
 
 /*----------------------------------------------- animations ---------------------------------------------*/
@@ -271,6 +272,18 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes grow2 {
+  0% {
+   color: #4C6FFF;
+  }
+  50% {
+   color: #8ca3ff;
+  }
+  100% {
+   color: #4C6FFF;
   }
 }
 
