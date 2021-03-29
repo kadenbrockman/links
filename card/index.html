@@ -62,12 +62,16 @@
 <div class="sharethis-inline-share-buttons"></div>
     </div>
     <div>
+      <button class="copybtn" onclick="copyToClipboard('#p1')">Copy URL2</button>
   <input class="copybtn" type="button" value="Copy Url" onclick="Copy();" /> <br> <textarea placeholder="bizcarrd.me/user" id="url" rows="1" cols="30"></textarea>
 </div>
   </div>
 
 </div>
 <hr> 
+<p id="p1" hidden>https://kadenb.link/card</p>
+<button onclick="copyToClipboard('#p1')">Copy TEXT 1</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="app.js" async defer></script>
     </body>
 </html>

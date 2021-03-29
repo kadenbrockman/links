@@ -37,3 +37,10 @@ function Copy() {
   Url.select();
   document.execCommand("copy");
 }
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
