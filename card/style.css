@@ -2,7 +2,11 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
 #card {
    margin-top: 25px;
    display: flex;
