@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kaden Brockman</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css">  
+        <!--Icons-->
+        <link rel="stylesheet" href="https://kadenbrockman.github.io/icons/css/all.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- Share -->
+        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=undefined&product=undefined' async='async'></script>
+    </head>
+    <body>
+ <div id="card">
+<section class="cardcontainer">
+  <div id="cardz">
+    <figure class="front">
+<p class="cardname">Kaden B.</p>
+<p class="cardsubtitle">Web & IOS Developer</p>
+    </figure>
+    <figure class="back">
+    <p class="cardnameb">Kaden B.</p>
+    <p class="cardsubtitleb">Web & IOS Developer</p>
+    <img id='qrcodeicon' src="https://api.qrserver.com/v1/create-qr-code/?data=https://kadenb.link/card&amp;size=100x100&color=ffffff&bgcolor=333333" alt="";
+    title="qrcode" width="50" height="50" />
+    <div class="emailcon">
+        <a class="link email" href="mailto:kaden@kadenbrockman.com"><i class="fas fa-envelope"></i> |  kaden@kadenbrockman.com</a>
+    </div>
+    <div class="websitecon"> 
+        <a class="link website" href="https://kadenbrockman.com"><i class="fas fa-laptop"></i> |  kadenbrockman.com</a>
+    </div>
+    </figure>
+  </div>
+</section>
+ </div>
+ <div class="cardbuttoncon">
+<section id="cardoptions">
+  <p>
+    <button id="flip">Flip <span><img src="img/svg/arrowsflip.svg" alt=""></span></button>
+  </p>
+</section>
+</div>
+<div id="sharebuttons">
+    <a class="link save" href="files/Kaden B E-business card.vcf">Save Contact <i class="fas fa-download"></i></a>
+    <button id="myBtn" class="share">Share Carrd <i class="fas fa-share"></i></button>
+</div>
+<!-- The Modal -->
+    <div id="myModal" class="modal">
+
+<!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Share this Card</h1>
+    <div class="socialbtns">
+<div class="sharethis-inline-share-buttons"></div>
+    </div>
+    <div>
+  <input class="copybtn" type="button" value="Copy Url" onclick="Copy();" /> <br> <textarea placeholder="bizcarrd.me/user" id="url" rows="1" cols="30"></textarea>
+</div>
+  </div>
+
+</div>
+<hr> 
+        <script src="app.js" async defer></script>
+    </body>
+</html>
