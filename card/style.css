@@ -210,9 +210,6 @@ hr {
   text-decoration: none;
   cursor: pointer;
 }
-.socialbtns{
-
-}
 
 .copybtn {
 margin: 15px;
@@ -237,6 +234,7 @@ line-height: 21px;
   font-size: 14px;
   line-height: 21px;
   padding-left: 5px;
+  max-width: 200px;
 }
 #url:focus {outline: none;}
 

@@ -1,8 +1,9 @@
+
 var card = document.getElementById('cardz');
 
 document.getElementById('flip').addEventListener('click', function() {
     card.classList.toggle('flipped');
-}, false);
+}, true);
 
 // Get the modal
 var modal = document.getElementById("myModal");
