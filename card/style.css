@@ -244,6 +244,9 @@ font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 21px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 #url {
   margin: 10px;
