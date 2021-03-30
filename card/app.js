@@ -30,13 +30,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-function Copy() {
-  var Url = document.getElementById("url");
-  Url.innerHTML = window.location.href;
-  console.log(Url.innerHTML)
-  Url.select();
-  document.execCommand("copy");
-}
+
 function copyToClipboard(element) {
   var $temp = $("<input>");
   $("body").append($temp);
@@ -44,3 +38,9 @@ function copyToClipboard(element) {
   document.execCommand("copy");
   $temp.remove();
 }
+    $(window).on('load resize',function(){
+        if($(window).width() > 950){
+            window.location = "desktop.html"
+        }
+    });
+    
