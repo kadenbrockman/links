@@ -162,7 +162,6 @@ position: absolute;
    justify-content: center; 
 }
 .save {
-filter: drop-shadow(0px 8px 40px #D3D3D3);
 background: #8D83FF;
 border-radius: 10px;
 font-family: Poppins;
@@ -177,7 +176,6 @@ margin: 5px 4px 5px 0;
 }
 .save:focus {outline: none;}
 .share {
-filter: drop-shadow(0px 8px 40px #D3D3D3);
 background: #333333;
 border-radius: 10px;
 font-family: Poppins;
