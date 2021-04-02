@@ -46,3 +46,6 @@ function copyToClipboard(element) {
         }
     });
     
+setTimeout(function() {
+  $('#loading').addClass('hidden');
+}, 1500);
