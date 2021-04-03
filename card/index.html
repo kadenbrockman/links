@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kaden Brockman</title>
+        <title>bizcarrd | Kaden</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Link sending-->
@@ -19,7 +19,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
         <link rel="manifest" href="img/favicon_io/site.webmanifest">
         <!--CSS-->
-        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="mstyle.css">  
         <!--Icons-->
         <link rel="stylesheet" href="https://kadenbrockman.github.io/icons/css/all.css">
         <!--Fonts-->
@@ -31,10 +31,11 @@
         
     </head>
     <body>
+      <section id="webcontainer">
 <!--Loading-->
       <div id="loading">
         <div class="loadingan">
-          <img class="bizlogo" src="img/logobizcard.png" alt="">
+          <img class="bizlogo" alt="">
           <h3 class="loadingtext"><span class="loadingbiz">biz</span>carrd</h3>
       </div>
 </div>
@@ -42,26 +43,29 @@
  <div id="card">
 <section class="cardcontainer">
   <div id="cardz">
+    <!-- Card Front -->
     <figure class="front">
-      <img class="whitelogo" src="img/cardwhiteop.png" alt="">
+      <img class="whitelogo" alt="">
       <p class="cardname">Kaden B.</p>
       <p class="cardsubtitle">Web & IOS Developer</p>
     </figure>
+    <!-- Card Back -->
     <figure class="back">
     <p class="cardnameb">Kaden B.</p>
     <p class="cardsubtitleb">Web & IOS Developer</p>
     <img id='qrcodeicon' src="https://api.qrserver.com/v1/create-qr-code/?data=https://kadenb.link/card&amp;size=100x100&color=ffffff&bgcolor=333333" alt="";
     title="qrcode" width="50" height="50" />
     <div class="emailcon">
-        <a class="link email" href="mailto:kaden@kadenbrockman.com"><i class="fas fa-envelope"></i> |  kaden@kadenbrockman.com</a>
+        <a class="link email" href="mailto:kaden@kadenbrockman.com" target="_blank" ><i class="fas fa-envelope"></i> |  kaden@kadenbrockman.com</a>
     </div>
     <div class="websitecon"> 
-        <a class="link website" href="https://kadenbrockman.com"><i class="fas fa-laptop"></i> |  kadenbrockman.com</a>
+        <a class="link website" href="https://kadenbrockman.com" target="_blank" ><i class="fas fa-laptop"></i> |  kadenbrockman.com</a>
     </div>
     </figure>
   </div>
 </section>
  </div>
+ <!-- Card Flip Button -->
  <div class="cardbuttoncon">
 <section id="cardoptions">
   <p>
@@ -69,14 +73,15 @@
   </p>
 </section>
 </div>
+<!-- Share/Save Buttons -->
 <div id="sharebuttons">
     <a class="link save" href="files/Kaden B E-business card.vcf">Save Contact <i class="fas fa-download"></i></a>
     <button id="myBtn" class="share">Share Carrd <i class="fas fa-share"></i></button>
 </div>
-<!-- The Modal -->
+<!-- The Share Pop-Up -->
     <div id="myModal" class="modal">
 
-<!-- Modal content -->
+<!-- Share Pop-Up content -->
   <div class="modal-content">
     <div class="close">&times;</div>
     <div class="cardtitle">
@@ -97,25 +102,33 @@
 
 </div>
 <hr> 
+<!-- Personal Social -->
 <div class="connectbtns">
-<a href="https://twitter.com/kadenbdev" class="fab fa-twitter soicons" id=""></a>
-<a href="https://instagram.com/kadenbdev" class="fab fa-instagram soicons" id=""></a>
-<a href="sms:4257280882" class="fa fa-sms soicons" id=""></a>
+<a href="https://twitter.com/kadenbdev" class="fab fa-twitter soicons" id="" target="_blank" ></a>
+<a href="https://instagram.com/kadenbdev" class="fab fa-instagram soicons" id="" target="_blank" ></a>
+<a href="sms:4257280882" class="fa fa-sms soicons" id="" target="_blank" ></a>
 </div>
+<!-- Personal Links -->
 <div class="linkssection">
 <div class="linkscontent">
-  <h3 class="linktitle">Check Out my Work <i class="fas fa-laptop-code"></i></h3>
-<a href="https://dribbble.com/kadenbrockman" class="fab fa-dribbble linkicon"></a><span class="linklabel"> Dribbble</span>
+  <h3 class="linktitle">My Links <i class="fas fa-link"></i></h3>
+<a href="https://dribbble.com/kadenbrockman" class="fab fa-dribbble linkicon" target="_blank" ></a><span class="linklabel"> Dribbble</span>
 <br>
-<a href="https://behance.net/kadenb" class="fab fa-behance linkicon"></a><span class="linklabel"> Behance</span>
+<a href="https://behance.net/kadenb" class="fab fa-behance linkicon" target="_blank" ></a><span class="linklabel"> Behance</span>
 <br>
-<a href="https://github.com/kadenbrockman" class="fab fa-github linkicon"></a><span class="linklabel"> Github</span>
+<a href="https://github.com/kadenbrockman" class="fab fa-github linkicon" target="_blank" ></a><span class="linklabel"> Github</span>
+<br>
+<a href="https://kadenbrockman.com" class="fas fa-globe linkicon" target="_blank" ></a><span class="linklabel"> My Website</span>
 </div>
 </div>
+<!-- Hidden URL -->
 <p id="p1" hidden>https://kadenb.link/card</p>
+<!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="app.js" async defer></script>
-    
-    <h4 class="bizcarrdbrnd" >Powered By: <span><a class="bizcarrdbrndlink" href="https://bizcarrd.me"><span class="bizbr">biz</span>carrd</a></span></h4>
-      </body>
+        <script src="mapp.js" async defer></script>
+<!-- Branding -->
+<h4 class="bizcarrdbrnd" >Powered By: <span><a class="bizcarrdbrndlink" href="https://bizcarrd.me"><span class="bizbr">biz</span>carrd</a></span></h4>
+     </section>
+</body>
+
 </html>
