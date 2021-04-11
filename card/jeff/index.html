@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>bizcarrd | Jeff</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Link sending-->
+        <meta property="og:url"                content="http://kadenb.link/card/index.html" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="Check Out Kaden's BizCarrd!" />
+        <meta property="og:description"        content="Get Your Own Virtual Business Card Today!" />
+        <meta property="og:image"              content="https://i.imgur.com/PUd49Hl.png" />
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css">  
+        <!--Icons-->
+        <link rel="stylesheet" href="https://kadenbrockman.github.io/icons/css/all.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+        <!--Other-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js"></script>
+        
+    </head>
+    <body>
+      <section id="webcontainer">
+<!--Loading-->
+      <div id="loading">
+        <div class="loadingan">
+          <img class="bizlogo" alt="">
+          <h3 class="loadingtext"><span class="loadingbiz">biz</span>carrd</h3>
+      </div>
+</div>
+<!--Card-->
+ <div id="card">
+<section class="cardcontainer">
+  <div id="cardz">
+    <!-- Card Front -->
+    <figure class="front">
+      <img class="whitelogo" alt="">
+      <p class="cardname">Jeff Smith</p>
+      <p class="cardsubtitle">Creator</p>
+    </figure>
+    <!-- Card Back -->
+    <figure class="back">
+    <p class="cardnameb">Jeff S.</p>
+    <p class="cardsubtitleb">Creator</p>
+    <img id='qrcodeicon' src="https://api.qrserver.com/v1/create-qr-code/?data=https://kadenb.link/card&amp;size=100x100&color=ffffff&bgcolor=333333" alt="";
+    title="qrcode" width="50" height="50" />
+    <div class="emailcon">
+        <a class="link email" href="mailto:kaden@kadenbrockman.com" target="_blank" ><i class="fas fa-envelope"></i> |  jeff@gmail.com</a>
+    </div>
+    <div class="websitecon"> 
+        <a class="link website" href="https://kadenbrockman.com" target="_blank" ><i class="fas fa-laptop"></i> |  jeffsmith.com</a>
+    </div>
+    </figure>
+  </div>
+</section>
+ </div>
+ <!-- Card Flip Button -->
+ <div class="cardbuttoncon">
+<section id="cardoptions">
+  <p>
+    <button id="flip">Flip <span><img src="img/svg/arrowsflip.svg" alt=""></span></button>
+  </p>
+</section>
+</div>
+<!-- Share/Save Buttons -->
+<div id="sharebuttons">
+    <a class="link save" href="files/Kaden B E-business card.vcf">Save Contact <i class="fas fa-download"></i></a>
+    <button id="myBtn" class="share">Share Carrd <i class="fas fa-share"></i></button>
+</div>
+<!-- The Share Pop-Up -->
+    <div id="myModal" class="modal">
+
+<!-- Share Pop-Up content -->
+  <div class="modal-content">
+    <div class="close">&times;</div>
+    <div class="cardtitle">
+    <h1>Share this Card</h1>
+    </div>
+    <div class="socialbtns">
+    <a data-pin-do="buttonBookmark" class="fab fa-pinterest" id="soicons" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/"></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkadenb.link%2Fcard&amp;src=sdkpreparse" class="fab fa-facebook" id="soicons"></a>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="fab fa-twitter" id="soicons" data-text="Check out Kaden B.&#39;s Virtual Business Card" data-url="https://kadenb.link/card" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a href="sms:&body=Check out Kaden B.'s Virtual Business Card https://kadenb.link/card" class="fa fa-sms" id="soicons"></a>
+    </div>
+    <img id='' src="https://api.qrserver.com/v1/create-qr-code/?data=https://kadenb.link/card&amp;size=100x100&color=333333&" alt="";
+    title="qrcode" width="75" height="75" />
+    <div>
+    <button class="copybtn" onclick="copyToClipboard('#p1')">Copy Card URL</button>
+    </div>
+  </div>
+
+</div>
+<hr> 
+<!-- Personal Social -->
+<div class="connectbtns">
+<a href="https://twitter.com/kadenbdev" class="fab fa-twitter soicons" id="" target="_blank" ></a>
+<a href="https://instagram.com/kadenbdev" class="fab fa-instagram soicons" id="" target="_blank" ></a>
+<a href="sms:4257280882" class="fa fa-sms soicons" id="" target="_blank" ></a>
+</div>
+<!-- About Me -->
+<div class="aboutmecontent">
+<div class="aboutme">
+<div class="profilepicture"></div>
+<div class="abouttext">
+<div class="profilename">Jeff Smith</div>
+<div class="profilelocation"><i class="fas fa-map-marker-alt"></i> Seattle, Wa</div>
+<div class="profilework"><i class="fas fa-briefcase"></i> Facebook</div>
+<div class="profilejobtitle"><i class="fas fa-code"></i> Social Media Manager</div>
+</div>
+</div>
+<div class="aboutmebio">
+<hr>
+<p>Hey! 👋 My name is Jeff. I am a creator and I currently work 💼 as a social media manager 👨🏻‍💻 at Facebook in 📍Seattle, Wa. <p>
+</div>
+</div>
+<!-- Personal Links -->
+<div class="linkssection">
+<div class="linkscontent">
+  <h3 class="linktitle">My Links <i class="fas fa-link"></i></h3>
+<a href="https://dribbble.com/kadenbrockman" class="fab fa-dribbble linkicon" target="_blank" ></a><span class="linklabel"> Dribbble</span>
+<br>
+<a href="https://behance.net/kadenb" class="fab fa-behance linkicon" target="_blank" ></a><span class="linklabel"> Behance</span>
+<br>
+<a href="https://github.com/kadenbrockman" class="fab fa-github linkicon" target="_blank" ></a><span class="linklabel"> Github</span>
+<br>
+<a href="https://kadenbrockman.com" class="fas fa-globe linkicon" target="_blank" ></a><span class="linklabel"> My Website</span>
+</div>
+</div>
+<!-- Hidden URL -->
+<p id="p1" hidden>https://kadenb.link/card</p>
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="app.js" async defer></script>
+<!-- Branding -->
+<h4 class="bizcarrdbrnd" >Powered By: <span><a class="bizcarrdbrndlink" href="https://bizcarrd.me"><span class="bizbr">biz</span>carrd</a></span></h4>
+     </section>
+</body>
+
+</html>
